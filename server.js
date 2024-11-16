@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app); // Create HTTP server
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "https://startup-project-frontend.vercel.app/", // Frontend URL
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true
   }
